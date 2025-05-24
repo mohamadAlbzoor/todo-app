@@ -1,0 +1,29 @@
+@TodoApi_HostAddress = https://localhost:7041
+
+### Get all todos
+GET {{TodoApi_HostAddress}}/api/todos
+Accept: application/json
+
+### Create a new todo
+POST {{TodoApi_HostAddress}}/api/todos
+Content-Type: application/json
+
+{
+  "title": "study",
+  "isCompleted": true
+}
+
+### Update a todo
+PUT {{TodoApi_HostAddress}}/todos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Buy groceries and cook",
+  "isCompleted": true
+}
+
+### Delete a todo
+DELETE {{TodoApi_HostAddress}}/api/todos/1
+
+###
