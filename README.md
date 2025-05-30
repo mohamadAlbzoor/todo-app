@@ -10,15 +10,16 @@ A modern fullstack To-Do list application with:
 ---
 
 ## Project Structure
-
+```
 todo-app/
-├── client/ # React + Tailwind frontend
+├── client/ 
+│ └── todo/ # React + Tailwind frontend
 ├── server/
 │ └── TodoApi/ # ASP.NET 9 Web API backend
 ├── .gitignore
 ├── README.md
 └── todo-app.sln
-
+```
 ---
 
 ## Getting Started
@@ -41,7 +42,7 @@ dotnet run
 ### 3. Setup the Frontend (React + Vite)
 
 ```bash
-cd client
+cd frontend/todo
 npm install
 npm run dev
 ```
